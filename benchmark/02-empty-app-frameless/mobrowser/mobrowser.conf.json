@@ -1,0 +1,40 @@
+{
+  "app": {
+    "name": "02-empty-app-frameless",
+    "version": {
+      "major": "1",
+      "minor": "0",
+      "patch": "0"
+    },
+    "bundle": {
+      "macOS": {
+        "icon": "assets/app.icns",
+        "bundleID": "com.company.02-empty-app-frameless",
+        "codesignIdentity": "",
+        "codesignEntitlements": "assets/entitlements.plist",
+        "teamID": "",
+        "appleID": "",
+        "password": ""
+      },
+      "Windows": {
+        "icon": "assets/app.ico",
+        "signCommand": ""
+      },
+      "Linux": {
+        "icon": "assets/app.png"
+      }
+    },
+    "configurations": {
+      "development": {
+        "build": {
+          "script": "npm run build:main"
+        }
+      },
+      "production": {
+        "build": {
+          "script": "npm run build:all"
+        }
+      }
+    }
+  }
+}

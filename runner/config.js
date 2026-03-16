@@ -218,6 +218,32 @@ export const libraries = {
 		name: '.Net MAUI w/ Vue',
 		url: 'https://github.com/dotnet/maui',
 	},
+	'mobrowser': {
+		exe: 'npm run mobrowser dev',
+		name: 'MoBrowser',
+		packageJsonVersionsNeeded: ['@mobrowser/api', '@mobrowser/cli'],
+		url: 'https://teamdev.com/mobrowser',
+		build: {
+			cmd: 'npm run mobrowser build',
+			folders: {
+				'darwin-arm64': {
+					path: 'build/dist/mac-arm64/bin/APPNAME.app',
+					exe: './Contents/MacOS/APPNAME',
+					currentOnly: true
+				},
+				'win32-x64': {
+					path: 'build/dist/win-x64/bin',
+					exe: 'APPNAME.exe',
+					currentOnly: true
+				},
+				'linux-x64': {
+					path: 'build/dist/linux-x64/bin',
+					exe: './APPNAME',
+					currentOnly: true
+				},
+			}
+		}
+	},
 };
 
 export const architectures = [
