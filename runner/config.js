@@ -219,12 +219,12 @@ export const libraries = {
 		url: 'https://github.com/dotnet/maui',
 	},
 	'mobrowser': {
-		exe: 'npm run mobrowser dev',
+		exe: 'npm run dev',
 		name: 'MoBrowser',
 		packageJsonVersionsNeeded: ['@mobrowser/api', '@mobrowser/cli'],
 		url: 'https://teamdev.com/mobrowser',
 		build: {
-			cmd: 'npm run mobrowser build',
+			cmd: 'npm run build',
 			folders: {
 				'darwin-arm64': {
 					path: 'build/dist/mac-arm64/bin/APPNAME.app',
