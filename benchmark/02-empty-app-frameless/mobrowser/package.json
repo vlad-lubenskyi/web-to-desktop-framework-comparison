@@ -4,19 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "mobrowser": "mobrowser",
-    "build:main": "node node_modules/@mobrowser/cli/proto.js && vite build --mode main",
-    "build:renderer": "vite build --mode renderer",
-    "build:all": "npm run build:main && npm run build:renderer"
+        "dev": "mobrowser dev",
+    "build": "mobrowser build",
+    "gen": "mobrowser gen",
+    "mobrowser": "mobrowser"
   },
   "dependencies": {
-    "@mobrowser/api": "2.1.0",
-    "@mobrowser/cli": "2.1.0"
+    "@mobrowser/api": "2.3.0",
+    "@mobrowser/cli": "2.3.0"
   },
   "optionalDependencies": {
-    "@mobrowser/sdk-darwin-arm64": "2.1.0",
-    "@mobrowser/sdk-linux-x64": "2.1.0",
-    "@mobrowser/sdk-win-x64": "2.1.0"
+    "@mobrowser/sdk-darwin-arm64": "2.3.0",
+    "@mobrowser/sdk-linux-x64": "2.3.0",
+    "@mobrowser/sdk-win-x64": "2.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",
